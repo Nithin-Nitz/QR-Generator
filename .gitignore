@@ -1,7 +1,9 @@
 # Dependencies
 client/node_modules
 server/node_modules
-/package-lock.json
+client/package-lock.json
+server/package-lock.json
+
 
 # Production artifacts
 client/build
