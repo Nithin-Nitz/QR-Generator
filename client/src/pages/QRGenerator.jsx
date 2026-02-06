@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import QRModal from "../components/QRModal";
 import QRGrid from "../components/QRGrid";
@@ -11,7 +11,7 @@ const QRGenerator = () => {
     const [qrList, setQrList] = useState([]);
     const [open, setOpen] = useState(false);
     const { user, logout } = useAuth();
-    const navigate = useNavigate();
+
 
     // Fetch QRs
     useEffect(() => {
