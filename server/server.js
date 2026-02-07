@@ -14,6 +14,9 @@ app.use(express.urlencoded({ extended: false, limit: "50mb" }));
 
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/qr", require("./routes/qrRoutes"));
+app.use("/", (req, res) => {
+    res.send("Hello World!");
+})
 
 // Error Handler Middleware
 app.use((err, req, res, next) => {
