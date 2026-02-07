@@ -57,7 +57,7 @@ const Signup = () => {
                             type="text"
                             required
                             className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-indigo-500/50 transition-all text-zinc-800 dark:text-gray-100"
-                            placeholder="John Doe"
+                            placeholder="Full Name"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                         />
