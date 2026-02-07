@@ -1,4 +1,7 @@
-const APIPrefix = process.env.REACT_APP_URL
+let APIPrefix = process.env.REACT_APP_URL || "";
+if (!APIPrefix.startsWith("http")) {
+    APIPrefix = "https://" + APIPrefix;
+}
 const API_URL = APIPrefix + "/auth";
 
 export const login = async (email, password) => {
